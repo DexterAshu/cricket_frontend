@@ -1,0 +1,37 @@
+.team-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.match-result {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.match-result.win {
+    background-color: #28a745;
+    /* Green for win */
+}
+
+.match-result.loss {
+    background-color: #dc3545;
+    /* Red for loss */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+
+    .points-table th,
+    .points-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+
+    .team-logo {
+        width: 24px;
+        height: 24px;
+    }
+}

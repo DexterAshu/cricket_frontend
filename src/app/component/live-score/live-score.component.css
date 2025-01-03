@@ -1,0 +1,80 @@
+/* Card Container */
+.custom-card {
+    width: 19rem;
+    background: linear-gradient(135deg, #f3f4f6, #dfe6e9);
+    border: 1px solid #d1d8e0;
+    /* Thin, light border for card separation */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Hover Effect */
+.custom-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Body */
+.custom-card-body {
+    text-align: center;
+}
+
+/* Card Title */
+.custom-card-title {
+    font-size: 1.2rem;
+    color: #2d3436;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Location Text */
+.custom-card-location {
+    font-weight: 600;
+    color: #636e72;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+/* Divider */
+.custom-card-divider {
+    border-top: 1px solid #b2bec3;
+    margin: 0.75rem 0;
+}
+
+/* Stats */
+.custom-card-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+/* Text for Teams and Scores */
+.custom-card-text.team {
+    font-weight: 600;
+    color: #0984e3;
+    font-size: 1rem;
+}
+
+.custom-card-text.score {
+    font-weight: 600;
+    color: #00b894;
+    font-size: 1rem;
+}
+
+/* Status Messages */
+.custom-card-status.toss {
+    color: #d63031;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.custom-card-status.result {
+    color: #0984e3;
+    font-weight: 600;
+    font-size: 1rem;
+}

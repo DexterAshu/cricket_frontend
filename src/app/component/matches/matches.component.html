@@ -1,0 +1,39 @@
+<div class="container py-5">
+    <div class="col-12">
+        <h4 class="attractive-heading">Upcoming Matches</h4>
+    </div>
+
+    <div class="row g-4 my-3">
+        @for(item of matches; track $index) {
+            <div class="col-md-4">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <!-- Left Team Image -->
+                        <div class="team-container">
+                            <img src="{{ item?.flag1 }}" alt="India" class="team-image">
+                            <h4 class="team-name">{{ item?.team1 }}</h4>
+                        </div>
+                        <!-- Center VS -->
+                        <div class="vs-container">
+                            <h2 class="vs-text">VS</h2>
+                        </div>
+                        <!-- Right Team Image -->
+                        <div class="team-container">
+                            <img src="{{ item?.flag2 }}" alt="Australia" class="team-image">
+                            <h4 class="team-name">{{ item?.team2 }}</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <p class="text-muted mb-1">Date: {{ item?.date }} | Time: {{ item?.time }}</p>
+                        <p class="text-muted">Venue: {{ item?.venue }}</p>
+                    </div>
+                </div>
+            </div>
+        }
+        @if (!matches) {
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+        }
+    </div>
+</div>

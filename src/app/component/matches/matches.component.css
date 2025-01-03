@@ -1,0 +1,105 @@
+/* Match Card Styles */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #ffffff;
+    /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #ecf0f1;
+    /* Light gray background on hover */
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.card-footer {
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+}
+
+.team-container {
+    text-align: center;
+    width: 30%;
+}
+
+.team-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2980b9;
+    /* Blue border around images */
+    transition: border 0.3s ease;
+}
+
+.team-image:hover {
+    border-color: #3498db;
+    /* Lighter blue border on hover */
+}
+
+.team-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #2980b9;
+    /* Bright blue for team name */
+    transition: color 0.3s ease;
+}
+
+.team-name:hover {
+    color: #3498db;
+    /* Lighter blue on hover */
+}
+
+.vs-container {
+    text-align: center;
+    width: 40%;
+}
+
+.vs-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    /* Red for VS text */
+    margin: 0;
+}
+
+.card-footer p {
+    font-size: 1.1rem;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-primary {
+    color: #3498db !important;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-container {
+        margin-bottom: 20px;
+    }
+
+    .vs-container {
+        margin: 10px 0;
+    }
+}

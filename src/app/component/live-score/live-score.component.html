@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h4 class="attractive-heading">Live Cricket Score</h4>
+        </div>
+        <div class="d-flex flex-wrap justify-content-start gap-3 my-3">
+            @for(item of liveScoreData; track $index) {
+            <div class="custom-card">
+                <div class="custom-card-body">
+                    <h5 class="custom-card-title">{{ item?.match }}</h5>
+                    <p class="custom-card-location">{{ item?.venue }}</p>
+                    <hr class="custom-card-divider">
+            
+                    <div class="custom-card-stats">
+                        <p class="custom-card-text team">{{ item?.team1 }}</p>
+                        <p class="custom-card-text score">{{ item?.score1 }}</p>
+                    </div>
+            
+                    <div class="custom-card-stats">
+                        <p class="custom-card-text team">{{ item?.team2 }}</p>
+                        <p class="custom-card-text score">{{ item?.score2 }}</p>
+                    </div>
+            
+                    <p class="custom-card-status toss">{{ item?.toss }}</p>
+                    <p class="custom-card-status result">{{ item?.result }}</p>
+                </div>
+            </div>
+            }
+            @if (!liveScoreData) {
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
