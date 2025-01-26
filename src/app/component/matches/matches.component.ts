@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../_services/api.service';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-matches',
@@ -13,10 +14,13 @@ export class MatchesComponent {
   matches: any;
 
   constructor(
-    private apiService: ApiService
+    private apiService: ApiService,
+    private cookie: CookieService
   ) { }
 
   ngOnInit(): void {
+    console.log("Token: ", this.cookie.check('AuthToken'));
+    
     this.getLiveScoreData();
   }
 

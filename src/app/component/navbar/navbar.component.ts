@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
-import { ApiService } from '../../_services/api.service';
+import { AuthService } from '../../_services';
 
 @Component({
   selector: 'app-navbar',
@@ -13,15 +13,15 @@ import { ApiService } from '../../_services/api.service';
 export class NavbarComponent {
 
   constructor(
-    private apiService: ApiService,
+    private authService: AuthService,
   ){}
 
-  isLoggedIn(): boolean {
-    return this.apiService.isLoggedIn();
+  isLoggedIn() {
+    // return this.authService.isLoggedIn();
   }
 
   logout() {
-    this.apiService.logout();
+    this.authService.logout();
   }
 
 

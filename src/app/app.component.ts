@@ -5,10 +5,11 @@ import { NavbarComponent } from "./component/navbar/navbar.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports: [RouterOutlet, NavbarComponent]
 })
+
 export class AppComponent {
   title = 'cricket';
 }
