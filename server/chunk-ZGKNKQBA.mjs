@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Sa as o,Ta as a,W as n,_a as r,db as i}from"./chunk-H2ZC2GLG.mjs";import"./chunk-VVCT4QZE.mjs";var m=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=n({type:e,selectors:[["app-players"]],standalone:!0,features:[i],decls:2,vars:0,template:function(t,p){t&1&&(o(0,"p"),r(1,"players works!"),a())}})}}return e})();export{m as PlayersComponent};

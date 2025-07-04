@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/live-score",
+    "/login",
+    "/matches",
+    "/players",
+    "/points-table",
+    "/ranking",
+    "/register"
+  ]
+}

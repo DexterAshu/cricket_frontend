@@ -1,0 +1,2 @@
+import './polyfills.server.mjs';
+import{Sa as o,Ta as i,W as n,_a as a,db as r}from"./chunk-H2ZC2GLG.mjs";import"./chunk-VVCT4QZE.mjs";var c=(()=>{class e{static{this.\u0275fac=function(t){return new(t||e)}}static{this.\u0275cmp=n({type:e,selectors:[["app-ranking"]],standalone:!0,features:[r],decls:2,vars:0,template:function(t,s){t&1&&(o(0,"p"),a(1,"ranking works!"),i())}})}}return e})();export{c as RankingComponent};
