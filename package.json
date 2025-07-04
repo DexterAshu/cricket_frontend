@@ -24,7 +24,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
-    "ngx-cookie-service": "^19.0.0",
+    "ngx-cookie-service": "^17.0.1",
     "notyf": "^3.10.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
