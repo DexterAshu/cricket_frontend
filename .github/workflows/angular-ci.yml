@@ -1,5 +1,10 @@
 name: Angular CI/CD
 
+permissions:
+  contents: write        # allow pushing commits
+  pages: write           # optional, for future Pages v2
+  id-token: write        # optional, for Pages v2
+
 on:
   push:
     branches: [ main ]
@@ -31,8 +36,9 @@ jobs:
       - name: 🚀 Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # target branch
-          folder: dist/cricket  # your build output folder
-          
+          branch: gh-pages
+          folder: dist/cricket
+          token: ${{ secrets.GITHUB_TOKEN }}   # 👈 key line
+
       # Optional: Deploy to GitHub Pages / FTP / S3 etc.
 
