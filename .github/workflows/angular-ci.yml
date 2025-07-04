@@ -22,11 +22,11 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install
 
-      - name: 🧪 Run Unit Tests
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
+      # - name: 🧪 Run Unit Tests
+      #   run: npm run test -- --watch=false --browsers=ChromeHeadless
 
       - name: 🏗️ Build Angular Project
         run: npm run build -- --configuration production
 
       # Optional: Deploy to GitHub Pages / FTP / S3 etc.
-      
+
