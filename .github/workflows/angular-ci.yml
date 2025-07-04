@@ -28,5 +28,11 @@ jobs:
       - name: 🏗️ Build Angular Project
         run: npm run build -- --configuration production
 
+      - name: 🚀 Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # target branch
+          folder: dist/cricket  # your build output folder
+          
       # Optional: Deploy to GitHub Pages / FTP / S3 etc.
 
